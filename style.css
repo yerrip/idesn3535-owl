@@ -1,0 +1,32 @@
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 24px;
+}
+
+ol {
+  list-style: none;
+}
+
+ol li a {
+  display: ;
+}
+
+#important,  h1 {
+  font-size: 48px;
+  color: #ddd;
+}
+
+.visited {
+  text-decoration: none;
+  color: #es3;
+}
+
+.visited:hover {
+  color: #aaa;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
