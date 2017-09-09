@@ -1,32 +1,383 @@
+@font-face {font-family: Radnika;  src: url(assets/Radnika-Black.woff);  font-weight: 900;}
+
+@font-face {font-family: Radnika;  src: url(assets/Radnika-SemiBolditalic.woff);  font-weight: 600;  font-style: italic;}
+
+@font-face {font-family: Latina;  src: url(assets/LatinaEssential-Light.otf);  font-weight: 200;}
+
+/* ----------------------------FONTS-----------------------------------------*/
+
+
 body {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 24px;
+background-color: #F5F3E0;
+margin: 0;
 }
 
-ol {
-  list-style: none;
-}
-
-ol li a {
-  display: ;
-}
-
-#important,  h1 {
-  font-size: 48px;
-  color: #ddd;
-}
-
-.visited {
-  text-decoration: none;
-  color: #es3;
-}
-
-.visited:hover {
-  color: #aaa;
-}
-
-nav {
+.profile {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  margin-top: 100px;
+  position: relative;
+  margin-bottom: 500px;
+}
+
+.name {
+  height: 220px;
+  width: 40%;
+  background-color: #fff;
+  position: absolute;
+  left: 83px;
+  z-index: 3;
+}
+
+.name h1 {
+  font-family: Latina;
+  font-weight: 200;
+  font-size: 44px;
+  color: #0E3248;
+  letter-spacing: 2px;
+  margin-left: 60px;
+  margin-top: 32px;
+  margin-bottom: 27px;
+}
+
+.name h3 {
+  font-family: Radnika;
+  font-size: 18px;
+  color: #EF3E2E;
+  letter-spacing: 6px;
+  line-height: 30px;
+  font-weight: 600;
+  font-style: italic;
+  text-transform: uppercase;
+  margin-left: 60px;
+  margin-bottom: 46px;
+}
+
+.quote {
+  height: 200px;
+  width: 55%;
+  background-color: #EF3E2E;
+  position: absolute;
+  right: 83px;
+  top: 75px;
+}
+
+.quote img.left {
+  width: 40px;
+  position: absolute;
+  left: 15%;
+  top: 30px;
+}
+
+.quote img.right {
+  width: 40px;
+  position: absolute;
+  right: 7%;
+  bottom: 30px;
+}
+
+.quote p {
+  font-family: Latina;
+  font-weight: 100;
+  font-size: 24px;
+  color: #FFFFFF;
+  letter-spacing: 3.2px;
+  line-height: 42px;
+  margin-left: 25%;
+  margin-top: 0;
+  margin-bottom: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+  max-width: 460px;
+}
+
+.featured {
+  display: flex;
+  position: relative;
+  margin-bottom: 200px
+}
+
+.featured .image {
+  width: 70%;
+  height: 590px;
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.description {
+  background-color: #fff;
+  width: 560px;
+  height: 330px;
+  position: absolute;
+  bottom: 0;
+  right: 83px;
+}
+
+.description h1.project {
+  font-family: Radnika;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-left: 45px;
+  margin-right: 70px;
+  margin-top: 35px;
+  color: #0E3248;
+}
+
+.description p {
+  max-width: 380px;
+  font-family: Latina;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 4px;
+  margin-left: 45px;
+  margin-right: 70px;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+a {
+font-family: Radnika;
+font-weight: 900;
+font-size: 18px;
+letter-spacing: 6px;
+text-transform: uppercase;
+padding-bottom: 10px;
+text-decoration: none;
+border-bottom: 2px solid #7D7B79;
+color: #7D7B79;
+margin-left: 45px;
+}
+
+.double {
+  position: relative;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 200px;
+}
+
+.single {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 50%;
+}
+
+.single .description {
+  position: relative;
+  right: 0;
+  margin-top: -150px
+}
+
+.double .single .image {
+  height: 500px;
+  width: 98%;
+  background-color: #D8D8D8;
+}
+
+.triple {
+  position: relative;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 200px;
+}
+
+.triple .single {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.triple .single .image {
+  height: 300px;
+  width: 400px;
+  background-color: #D8D8D8;
+}
+
+.triple .single .description {
+  position: relative;
+  right: 0;
+  margin-top: -90px;
+  width: 400px;
+  height: 450px;
+}
+
+footer {
+  width: 100%;
+  height: 150px;
+  display: flex;
+}
+
+footer .left-col {
+  width: 50%;
+  background-color: #0E3248;
+  height: 100%;
+}
+
+footer .right-col {
+  width: 50%;
+  background-color: #ECECEC;
+  height: 100%;
+}
+
+/* ----------------------------MEDIA QUERY-----------------------------------------*/
+
+@media (max-width: 1320px) {
+
+  .quote img.left {
+    left: 17%;
+  }
+
+  .quote p {
+    max-width: 400px;
+    margin-left: 30%;
+  }
+
+}
+
+/* ----------------------------MEDIA QUERY-----------------------------------------*/
+
+@media (max-width: 1024px) {
+
+  .name {
+    height: 300px;
+  }
+
+  .name h1 {
+    max-width: 290px;
+  }
+
+  .name h3 {
+    max-width: 250px;
+  }
+
+  .quote {
+    height: 300px;
+    top: 120px;
+  }
+
+  .quote img.left {
+    left: 25%;
+  }
+
+  .quote p {
+    max-width: 270px;
+    margin-left: 34%;
+  }
+}
+
+/* ----------------------------MEDIA QUERY-----------------------------------------*/
+
+@media (max-width: 900px) {
+
+  .name {
+    left: 40px
+  }
+
+.quote {
+  right: 40px;
+}
+  .quote img.left {
+    margin-left: 15%;
+  }
+
+  .quote p {
+        margin-left: 25%;
+  }
+
+}
+
+/* ----------------------------MEDIA QUERY-----------------------------------------*/
+
+@media (max-width: 800px) {
+
+  .name {
+      height: auto;
+  }
+
+  .name h3 {
+    max-width: 200px;
+    font-size: 15px;
+    line-height: 1.75;
+}
+.quote {
+  height: 270px;
+}
+
+.quote p {
+  font-size: 18px;
+  line-height: 1.75;
+  margin-right: 20px;
+}
+
+.quote img.left {
+    margin-left: -7%;
+    top: 30px;
+}
+
+.quote img.right {
+  bottom: 30px;
+}
+}
+
+/* ----------------------------MEDIA QUERY-----------------------------------------*/
+
+@media (max-width: 650px) {
+
+  .profile {
+    margin-top: 40px;
+  }
+  .name h1, .name h3 {
+        margin-left: 30px;
+            max-width: 350px;
+  }
+
+  .name {
+    width: 60%;
+  }
+
+  .quote {
+    width: 75%;
+    top: 180px;
+  }
+
+.quote img.left {
+      left: 15%;
+}
+}
+
+/* ----------------------------MEDIA QUERY-----------------------------------------*/
+
+@media (max-width: 560px) {
+  .name h1, .name h3 {
+    max-width: 220px;
+  }
+
+  .quote {
+    top: 250px;
+  }
+
+  .quote img.left {
+    top: 50px;
+}
+
+.quote img.right {
+    bottom: 50px;
+}
 }
