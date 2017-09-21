@@ -10,6 +10,8 @@
 body {
 background-color: #F5F3E0;
 margin: 0;
+font-family: Radnika;
+font-size: 18px;
 }
 
 .profile {
@@ -239,6 +241,8 @@ footer .right-col {
   background-color: #ECECEC;
   height: 100%;
 }
+
+
 
 /* ----------------------------MEDIA QUERY-----------------------------------------*/
 
