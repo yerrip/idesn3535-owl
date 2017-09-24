@@ -1,0 +1,68 @@
+@font-face {font-family: Radnika;  src: url(assets/Radnika-Black.woff);  font-weight: 900;}
+
+@font-face {font-family: Radnika;  src: url(assets/Radnika-SemiBolditalic.woff);  font-weight: 600;  font-style: italic;}
+
+@font-face {font-family: Latina;  src: url(assets/LatinaEssential-Light.otf);  font-weight: 200;}
+
+/* ----------------------------FONTS-----------------------------------------*/
+
+
+body {
+background-color: #F5F3E0;
+font-family: Radnika;
+font-weight: 600;
+font-size: 18px;
+letter-spacing: 2px;
+}
+
+header {
+    	background: #000;
+    	height: 50px;
+    	width: 100%;
+    }
+
+    header a {
+    	color: #fff;
+    	text-decoration: none;
+    }
+
+    header a:hover {
+        color: #bbb;
+    }
+
+    header ul {
+    	list-style: none;
+    	margin: 0;
+    	padding: 0;
+        margin-left: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header ul li {
+        margin-top: 15px;
+    }
+
+    .section {
+    	padding: 25px;
+    	color: #fff;
+    }
+
+    #section1 {
+    	background: #EF3E2E;
+    }
+
+    #section2 {
+    	background: #D8D8D8;
+    	color: #000;
+    }
+
+    #section3 {
+    	background: #0E3248;
+    }
+
+     #sidebar {
+        background: #fff;
+        padding: 25px;
+    }

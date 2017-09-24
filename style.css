@@ -159,6 +159,15 @@ color: #7D7B79;
 margin-left: 45px;
 }
 
+a.active {
+  color: #EF3E2E;
+  border-bottom: 2px solid #EF3E2E;
+}
+
+a.active:hover {
+  border-bottom: 0px solid #EF3E2E;
+}
+
 .featured .description {
   margin-bottom: -100px;
 }
