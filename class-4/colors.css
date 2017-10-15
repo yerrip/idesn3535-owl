@@ -1,0 +1,66 @@
+.nav {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
+
+.colorbox {
+	width: 33%;
+	height: 100px;
+	font-size: 3em;
+	background: #ddd; 
+}
+
+.enabled{
+	background-color: #fff;
+}
+#addRed.enabled{
+	background-color: #fff;
+}
+#addBlue.enabled{
+	background-color: #fff;
+}
+#addYellow.enabled{
+	background-color: #fff;
+}
+
+#splotch {
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	margin: auto;
+	border: 1px solid #000;
+	margin-top: 100px;
+}
+
+#splotch.red {
+	background: #FF0000;
+}
+
+#splotch.blue {
+	background: #0000FF;
+}
+
+#splotch.yellow {
+	background: #FFFF00;
+}
+
+#splotch.red.blue {
+	background: #7F00FF;
+}
+
+#splotch.blue.yellow {
+	background: #00FF00;
+}
+
+#splotch.red.yellow {
+	background: #FFA500;
+}
+
+#splotch.blue.red {
+	background: #FF00FF;
+}
+
+#splotch.blue.red.yellow {
+	background: #000;
+}

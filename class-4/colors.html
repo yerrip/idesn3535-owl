@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Colors</title>
+    <link href="colors.css" rel="stylesheet">
+    <link href="../normalize.css" rel="stylesheet">
+
+    <script>
+
+    	function setColor() {
+
+    	}
+	 
+	</script>
+
+  </head>
+
+  <body>
+
+<div class="nav">
+	<button onclick="redColorChange()" class="colorbox" id="addRed">Add Red</button>
+	<button onclick="blueColorChange()" class="colorbox" id="addBlue">Add Blue</button>
+	<button onclick="yellowColorChange()" class="colorbox" id="addYellow">Add Yellow</button>
+</div>
+
+<div id="splotch">
+
+<script>
+	function redColorChange() {
+	    var element = document.getElementById("splotch");
+	    element.classList.toggle("red");
+	    event.currentTarget.classList.toggle('enabled')
+	}
+
+	function blueColorChange() {
+	    var element = document.getElementById("splotch");
+	    element.classList.toggle("blue");
+	    event.currentTarget.classList.toggle('enabled')
+	}
+
+	function yellowColorChange() {
+	    var element = document.getElementById("splotch");
+	    element.classList.toggle("yellow");
+	    event.currentTarget.classList.toggle('enabled')
+	}
+</script>
+	</div>
+
+</body>
+
+</html>

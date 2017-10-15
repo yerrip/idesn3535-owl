@@ -1,0 +1,137 @@
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1em;
+  background-color: #FFF;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+#container {
+  width: 100%;
+  height: 100vh;
+  background: #aaa;
+  padding: 50px;
+}
+
+/* ---------------SECTIONS---------------*/
+
+
+.bill {
+  width: 75%;
+  padding: 25px;
+  overflow-x: scroll;
+  border-top: 1px solid #fff;
+}
+
+.percentage {
+  width: 75%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 25px;
+  overflow-x: scroll;
+  border-top: 1px solid #fff;
+}
+
+.total {
+  width: 75%;
+  padding: 25px;
+  overflow-x: scroll;
+  border-top: 1px solid #fff;
+}
+
+.buttons {
+  width: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+/* ---------------PARTS---------------*/
+
+button, input[type="submit"], input[type="reset"] {
+    background-color: rgba(0, 0, 0, 0);
+    color: inherit;
+    border: none;
+    padding: 0! important;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit !important;
+}
+
+#bill-amount {
+  margin-left: 50px;
+  background: #ccc;
+  border: 0px;
+  transition: all ease 500ms;
+  padding: 0px;
+  width: 50%;
+  height: 60px;
+  font-size: 48px;
+  color: #000;
+  padding-left: 50px;
+}
+
+
+#bill-amount:focus {
+  background: #222;
+  border: 0px;
+  transition: all ease 500ms;
+  padding: 50px;
+  color: #fff;
+}
+
+
+#plus-button {
+  background-image:url('plus.svg');
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all ease 500ms;
+}
+
+#minus-button {
+  background-image:url('minus.svg');
+  width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: ease 500ms;
+}
+
+#minus-button:hover, #plus-button:hover {
+  opacity: .5;
+}
+
+
+#tip-number {
+  font-size: 100px;
+  font-weight: 100;
+  transition: all ease 500ms;
+}
+.tip-info {
+width: 33%;
+}
+
+ .tip-dollar {
+  width: 50%;
+  margin-left: 60px;
+ }
+
+#all-total {
+  width: 50%;
+  height: 135px;
+  font-size: 100px;
+  font-weight: 100;
+  transition: all ease 500ms;
+
+}
+
+#tip-amount {
+  width: 500px;
+  height: 135px;
+  font-size: 100px;
+  font-weight: 100;
+  transition: all ease 500ms;
+
+}

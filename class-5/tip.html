@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tip Calculator</title>
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,700,900" rel="stylesheet">  <link href="../normalize.css" rel="stylesheet" />
+  <link href="tip.css" rel="stylesheet" />
+</head>
+<body>
+
+<div id="container">
+
+    <div class="bill">
+      BILL AMOUNT
+      <input id="bill-amount" type="text"/>
+    </div>
+
+    <div class="percentage">
+
+          <div class="tip-info">
+              <div id="tip-number"></div>
+              <div class="label">TIP PERCENT</div>
+          </div>
+
+          <div class="buttons">
+            <button id="plus-button"></button>
+            <button id="minus-button"></button>
+          </div>
+    
+          <div class="amount"></div>
+            <div class="tip-dollar">
+              <div id="tip-amount"></div>
+              <div class="label">TIP AMOUNT</div>
+          </div>
+
+    </div>
+
+
+    <div class="total">
+      <h1>TOTAL</h1>
+      <div id="all-total"></div>
+    </div>
+
+</div>
+<script>
+
+
+var percentage = document.getElementById("tip-number");
+var amount = document.getElementById("tip-amount");
+var total = document.getElementById("all-total");
+var bill = document.getElementById("bill-amount");
+
+var plus = document.getElementById("plus-button");
+var minus = document.getElementById("minus-button");
+
+let percentage_amount = 20;
+
+percentage.innerHTML = percentage_amount + "%"
+
+function update() {
+  percentage.innerHTML = percentage_amount + "%"
+  // get the bill amount value
+  bill.value * (percentage_amount / 100)
+  // do the math
+  // update the tipAmount and total
+  let tipAmount = parseFloat(bill.value) * parseFloat(percentage_amount / 100)
+
+  amount.innerHTML = "$" + tipAmount.toFixed(2);
+
+
+  total.innerHTML = "$" + parseInt(bill.value) + parseInt(tipAmount.toFixed(2));
+
+
+};
+
+bill.addEventListener('keyup', function() {
+  update()
+});
+
+
+plus.addEventListener('click', function(){
+  percentage_amount++;
+  update();
+});
+
+minus.addEventListener('click', function(){
+  percentage_amount--;
+  update();
+});
+</script>
+</body>
+</html>

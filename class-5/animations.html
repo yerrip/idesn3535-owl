@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Class 5: Animations</title>
+
+	<style> 
+	#box {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	transition: background-color 2s, margin 2s, width 2s, height 2s;
+	}
+
+	#box.bigbluebox {
+		background-color: blue;
+		width: 500px;
+		height: 500px;
+	}
+
+	#box.moved {
+		margin-left: 250px;
+		margin-top: 250px;
+	}
+
+	#box:hover {
+		background-color: green;
+	}
+
+</style>
+</head>
+<body>
+	<h1>Animations!</h1>
+
+	<div id="box"></div>
+
+	<script>
+
+		const box = document.getElementById('box');
+
+		box.addEventListener('click', function () {
+			box.classList.toggle('bigbluebox');
+
+		});
+
+
+		box.addEventListener('mouseover', function(e) {
+		e.currentTarget.classList.toggle('moved');
+
+		});
+	</script>
+</body>
+</html>
