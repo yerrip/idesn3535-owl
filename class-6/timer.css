@@ -1,0 +1,71 @@
+body {
+	font-family: 'Nunito Sans', sans-serif;
+  font-size: 1em;
+  background-color: #FFF;
+  font-weight: 900;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+button {
+  background:none;
+  border: 1px solid #ccc;
+  font-size:1em;
+  color:blue;
+  padding: 5px;
+  width: 100px;
+  margin-top: 15px;
+}
+
+.container {
+	margin-top: 90vh;
+	width: 30%;
+	background-color: #eee;
+	padding: 25px;
+	transition: all 250ms ease;
+}
+
+
+#timer {
+	margin-top: -10px;
+}
+
+#control-buttons {
+margin-top: 30px;
+}
+.open {
+  margin-top: 0;
+}
+
+
+.menu-toggle {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 3;
+  padding: 25px;
+  transition: all 500ms ease;
+}
+
+.menu-toggle .bar1 {
+  width: 32px;
+  background-color: #000000;
+  height: 3px;
+  transition: all 0.5s ease;
+  transform: rotate(90deg) translateX(7px);
+}
+
+.menu-toggle .bar2 {
+  width: 32px;
+  background-color: #000000;
+  height: 3px;
+  transition: all 0.5s ease;
+  transform: rotate(180deg) translateY(-4px);
+}
+
+.rotate {
+	transform: rotate(235deg);
+}

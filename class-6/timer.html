@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Timer</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		crossorigin="anonymous">
+	</script>
+
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,700,900" rel="stylesheet">  <link href="../normalize.css" rel="stylesheet" />
+  <link href="timer.css" rel="stylesheet" />
+</head>
+<body>
+
+	<div class="container">
+		<div id="timer">
+		<div class="menu-toggle">
+	      <div class="bar1"></div>
+	      <div class="bar2"></div>
+    	</div>
+			<span id="hours">00</span>:
+			<span id="minutes">00</span>:
+			<span id="seconds">00</span>
+
+			<button id="start-button">Start/Stop</button>
+
+		</div>
+
+		<div id="control-buttons">
+			<div>
+				<div>Hours</div>
+				<button class="control-button" data-amount="-3600">-</button>
+				<button class="control-button" data-amount="3600">+</button>
+			</div>
+
+			<div>
+				<div>Minutes</div>
+				<button class="control-button" data-amount="-60">-</button>
+				<button class="control-button" data-amount="60">+</button>
+			</div>
+
+			<div>
+				<div>Seconds</div>
+				<button class="control-button" data-amount="-1">-</button>
+				<button class="control-button" data-amount="1">+</button>
+			</div>
+		</div>
+
+</div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
