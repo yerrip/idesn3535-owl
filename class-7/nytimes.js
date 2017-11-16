@@ -24,6 +24,8 @@ $(document).ready(function() {
 						const articleImage = document.createElement('img');
 						articleImage.src = "https://nytimes.com/" + article.multimedia[0].url;
 						articleItem.classList.add('has-image')
+						articleItem.append(articleImage)
+
 					}
 
 						const pubDate = document.createElement('div');

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous">
+	</script>
+
+	<script src="utils.js"></script>
+	<link href="normalize.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+	<script src="nav.html.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			$('body').prepend( getTemplate(headerTemplate, {class: "home" ,title: 'Home'}) );
+			$('body').append( getTemplate(footerTemplate, {class: "home" ,title: 'Home'}) );
+		});
+	</script>
+</head>
+
+
+<body>
+
+	<section class="hero">
+		
+		<div class="slider">
+
+			<div class="slider-toggle">
+				<div class="controls">
+					<div class="sequence">1 of 7</div>
+					<div id="left-arrow"><img src="left-arrow.svg"></div>
+					<div id="right-arrow"><img src="right-arrow.svg"></div>
+				</div>
+
+				</div>
+
+				
+				<div class="drop">
+					<h1>
+						Chihuly  Nights
+					</h1>
+
+					<p>
+						The exhibition is infused with a magical energy as the artworks are spectacularly illuminated amid TBG’s sweeping vistas and magnificent Conservatory. 
+					</p>
+
+				</div>
+		</div>
+
+	</section>
+
+<section class="about">
+	<div class="section-header">About the garden</div>
+
+	<div class="description">
+
+		<p>The Bronx Garden is an iconic living museum, a major educational institution, and a renowned plant research and conservation organization.</p>
+
+		<p>Founded in 1891 and now a National Historic Landmark, it is one of the greatest botanical gardens in the world and the largest in any city in the United States, distinguished by the beauty of its diverse landscape and extensive collections and gardens, as well as by the scope and excellence of its multidisciplinary exhibitions and programs.</p>
+		
+		<button>Learn More</button>
+	</div>
+	
+</section>
+
+
+
+</body>
+</html>

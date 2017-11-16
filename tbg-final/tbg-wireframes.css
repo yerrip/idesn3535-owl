@@ -1,0 +1,25 @@
+body {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	background-color: #F5F3E0;
+}
+
+img {
+	border: solid 2px #ddd;
+	margin-top: 200px;
+}
+
+.desktop {
+width: 100%;
+} 
+
+.tablet {
+width: 500px;
+margin-left: 15%;
+} 
+
+.mobile {
+	width: 300px;
+	margin-left: 35%;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	crossorigin="anonymous">
+	</script>
+
+	<script src="template-engine.js"></script>
+	<link href="../normalize.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+	<script src="templates.js.html"></script>
+
+
+	<script>
+		$(document).ready(function() {
+			$('body').prepend( getTemplate(headerTemplate, {class: "home" ,title: 'Home'}) );
+
+			$('body').append( getTemplate(footerTemplate, {class: "home" ,title: 'Home'}) );
+
+		});
+	</script>
+
+</head>
+<body>
+
+	<p>Homepage is a description</p>
+
+</body>
+</html>

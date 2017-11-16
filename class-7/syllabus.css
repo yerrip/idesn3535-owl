@@ -1,5 +1,5 @@
 body {
-	background: #b72025;
+	background: #333;
 	color: #fff;
 	font-family: 'Work Sans', sans-serif;
 }
@@ -25,10 +25,15 @@ table li {
 }
 
 thead {
-	color: #000;
+	color: #ddd;
 	height: 50px;
 }
 
 tr {
 	border-top: 1pt solid #fff;
+}
+
+#loader img {
+	width: 75px;
+	padding: 200px;
 }
