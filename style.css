@@ -169,7 +169,7 @@ a.active:hover {
 }
 
 .featured .description {
-  margin-bottom: -100px;
+  margin-bottom: -50px;
 }
 
 .double {
@@ -222,15 +222,15 @@ a.active:hover {
 .triple .single .image {
   height: 300px;
   width: 400px;
-  background-color: #D8D8D8;
+  background-color: #fff;
 }
 
 .triple .single .description {
   position: relative;
   right: 50px;
-  margin-top: -90px;
+  margin-top: -50px;
   max-width: 400px;
-  height: 450px;
+  padding: 20px;
 }
 
 footer {
