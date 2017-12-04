@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>The Bronx Garden</title>
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous">
+	</script>
+
+	<script src="utils.js"></script>
+	<script src="lightbox.js"></script>
+	<link href="normalize.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+	<link href="about.css" rel="stylesheet">
+	<script src="nav.html.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			$('body').prepend( getTemplate(headerTemplateAbout, {class: "about" ,title: 'About'}) );
+		});
+	</script>
+</head>
+
+
+<body class="about-page">
+	<div class="main-content">
+		<div class="photo-feature"></div>
+		<div class="main-text">
+			<div class="section-header">Mission</div>
+			<div class="content-box">
+			<p>The New York Botanical Garden is an advocate for the plant kingdom. The Garden pursues its mission through its role as a museum of living plant collections arranged in gardens and landscapes across its National Historic Landmark site; through its comprehensive education programs in horticulture and plant science; and through the wide-ranging research programs of the International Plant Science Center.
+			</p>
+
+			<div class="section-header">History</div>
+			<div class="content-box two-col">
+			<p>
+				Distinguished by the beauty of its landscape, collections, and gardens as well as the scope and excellence of its programs in horticulture, education, and science, The New York Botanical Garden is unique among museums and public places in America. The illustrious history of the Garden began during the 19th-century civic movement in New York City to create a cosmopolitan world capital. City officials, prominent financiers, and corporate citizens created an impressive roster of great cultural institutions, including public libraries, museums, zoos, and this botanical garden.
+			</p>
+
+			<p>
+				Inspired by an 1888 visit to the Royal Botanic Gardens, Kew, near London, eminent Columbia University botanist Nathaniel Lord Britton, and his wife, Elizabeth, also a botanist, determined that New York should have one of the world’s great botanical gardens. Upon their return home, they launched a public campaign to establish this institution as a private, non-profit corporation in partnership with New York City and State, and their new botanical garden was chartered by New York State in 1891.
+			</p>
+			</div>
+		</div>
+	</div>
+
+	<section class="info-bar">
+		<div class="heading">
+			<h1>About the Garden</h1>
+			<h2>How it all started</h2>
+		</div>
+		<div class="divider"></div>
+		<div class="more-info">
+			<span>Driven by this mission,</span> the Garden’s Board and staff<span> have created one of the world’s </span>most comprehensive plant research and conservation programs, <span>which includes fieldwork to </span>discover new species, active collaborations to promote forest and habitat protection, and plant molecular biology.
+		</div>
+		
+	</section>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous">
+</script>
+
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+  $('.your-class').slick({
+
+  	  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+
+  });
+});
+</script>
+
+<style>
+img {
+	width: 400px;
+}
+</style>
+
+<body>
+
+<div class="your-class">
+	  <div><img src="../assets/bloomberg-small.png"></div>
+	  <div><img src="../assets/advanced-layouts.png"></div>
+	  <div><img src="../assets/responsive-design.png"></div>
+</div>
+
+</body>
+</html>

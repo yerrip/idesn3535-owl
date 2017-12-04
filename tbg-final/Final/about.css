@@ -1,0 +1,161 @@
+body.about-page {
+	background-color: #F2EEDC;
+	margin-bottom: 20vh;
+}
+
+body.about-page header a {
+	color: #734A9D;
+}
+
+body.visit-page {
+	background-color: #76C8AD;
+	margin-bottom: 20vh;
+}
+
+body.visit-page header a {
+	color: #000;
+}
+
+body.events-page {
+	background-color: #734A9D;
+	margin-bottom: 20vh;
+}
+
+body.events-page header a {
+	color: #fff;
+}
+
+.info-bar {
+	background-color: #fff;
+	width: 100vw;
+	height: 20vh;
+	position: relative;
+	display: flex;
+	padding: 40px;
+	padding-left: 50px;
+	padding-right: 50px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+
+.info-bar .heading {
+	width: 42%;
+}
+
+.info-bar .heading h1 {
+	font-family: IBM Plex Serif;
+	font-weight: 100;
+	font-size: 48px;
+	margin-bottom: 25px;
+	color: #734A9D;
+	margin: 0;
+}
+
+.info-bar .heading h2 {
+margin-top: 5px;
+font-family: Founders Grotesk, sans-serif;
+text-transform: uppercase;
+font-weight: 900;
+letter-spacing: 2px;
+color: #734A9D;
+font-size: 20px;
+}
+
+.info-bar .more-info {
+	width: 50%;
+	margin: 0;
+	font-family: Founders Grotesk, sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.info-bar .more-info span {
+font-family: IBM Plex Serif;
+font-weight: 100;
+font-size: 16px;
+}
+
+.info-bar .divider {
+	width: 1px;
+	height: 100px;
+	background-color: #000;
+	margin-right: 25px;
+	margin-left: 50px;
+	margin-top: 5px;
+	position: relative;
+}
+
+.main-content {
+	display: flex;
+	margin-top: 50px;
+}
+
+.main-text {
+	max-width: 70vw;
+	margin-right: 100px;
+}
+
+.main-text .section-header:nth-child(2){
+line-height: 0;
+margin-top: 50px;
+margin-bottom: 10px;
+}
+
+.content-box p {
+	margin-right: 25px;
+}
+
+.content-box p.thin {
+max-width: 300px;
+}
+
+.photo-feature {
+	background-image: url(about-main.jpg);
+	width: 30vw;
+	height: 60vh;
+	margin-right: 15vw;
+	margin-left: 100px;
+}
+
+.two-col {
+display: flex;
+}
+
+/* -------------- VISITPAGE ---------------*/
+
+.visit-page .section-header {
+	color: #000;
+}
+
+
+.visit-page .controls {
+	width: 40%;
+	justify-content: space-between;
+}
+
+
+.visit-page .sequence {
+	font-weight: 600;
+	color: #F4F8EB;
+}
+
+.event-feature {
+	width: 30vw;
+	height: 60vh;
+	margin-right: 15vw;
+	margin-left: 100px;
+}
+
+.visit-page .more-info {
+	margin-top: 15px;
+}
+
+.visit-page .info-bar img {
+	width: 150px;
+	height: 230px;
+	position: absolute;
+	right: 20px;
+	top: -135px;
+
+}

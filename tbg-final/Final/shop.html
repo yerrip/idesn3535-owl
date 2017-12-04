@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>The Bronx Garden</title>
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous">
+	</script>
+
+	<script src="utils.js"></script>
+	<script src="lightbox.js"></script>
+	<link href="normalize.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+	<link href="shop.css" rel="stylesheet">
+	<link href="about.css" rel="stylesheet">
+	<script src="nav.html.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			$('body').prepend( getTemplate(headerTemplate, {class: "shop" ,title: 'Shop'}) );
+			$('body').append( getTemplate(footerTemplate, {class: "shop" ,title: 'Shop'}) );
+		});
+	</script>
+</head>
+
+
+<body>
+
+	<section class="hero">
+		
+	</section>
+
+	<section class="filters">
+		<div class="section-header">
+			Shop at the garden
+		</div>
+
+		<div class="divider"></div>
+
+		<ul>
+			<li>Beauty</li>
+			<li>Books</li>
+			<li>Fashion</li>
+			<li>Home</li>
+			<li>Gardening &amp; Plants</li>
+			<li>Stationary</li>
+			<li>Sale</li>
+		</ul>
+	</section>
+
+	<section class="shop-grid">
+
+	<div class="row">
+		<div class="featured-box scarf">
+			<div id="shop-view-toggle"><img src="shop-view-toggle.svg"></div>
+
+			<div id="product-overlay">
+
+				<h1>Flora Illustrata Silk Scarf</h1>
+
+				<div class="price">$46.00</div>
+
+				<div class="view-product">
+					<img src="view-product.svg">
+					<p>View This Product</p>
+				</div>
+				<div id="shop-close-toggle"><img src="shop-close-toggle.svg"></div>
+			</div>
+		</div>
+
+		<div class="two-product">
+			<div class="product tote-v1">
+				<div id="shop-view-toggle"><img src="shop-view-toggle.svg"></div>
+
+			<div id="product-overlay">
+
+				<h1>Flora Illustrata Silk Scarf</h1>
+
+				<div class="price">$46.00</div>
+
+				<div class="view-product">
+					<img src="view-product.svg">
+					<p>View This Product</p>
+				</div>
+				<div id="shop-close-toggle"><img src="shop-close-toggle.svg"></div>
+			</div>
+			</div>
+			<div class="product tote-v2">
+				<div id="shop-view-toggle"><img src="shop-view-toggle.svg"></div>
+
+			<div id="product-overlay">
+
+				<h1>Flora Illustrata Silk Scarf</h1>
+
+				<div class="price">$46.00</div>
+
+				<div class="view-product">
+					<img src="view-product.svg">
+					<p>View This Product</p>
+				</div>
+				<div id="shop-close-toggle"><img src="shop-close-toggle.svg"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row-always">
+		<div class="product"></div>
+
+		<div class="product"></div>
+
+		<div class="product"></div>
+	</div>
+
+	<div class="row-reverse">
+		<div class="featured-box scarf">
+			<div id="shop-view-toggle"><img src="shop-view-toggle.svg"></div>
+
+			<div id="product-overlay">
+
+				<h1>Flora Illustrata Silk Scarf</h1>
+
+				<div class="price">$46.00</div>
+
+				<div class="view-product">
+					<img src="view-product.svg">
+					<p>View This Product</p>
+				</div>
+				<div id="shop-close-toggle"><img src="shop-close-toggle.svg"></div>
+			</div>
+		</div>
+
+		<div class="two-product">
+			<div class="product tote-v1">
+				<div id="shop-view-toggle"><img src="shop-view-toggle.svg"></div>
+
+			<div id="product-overlay">
+
+				<h1>Flora Illustrata Silk Scarf</h1>
+
+				<div class="price">$46.00</div>
+
+				<div class="view-product">
+					<img src="view-product.svg">
+					<p>View This Product</p>
+				</div>
+				<div id="shop-close-toggle"><img src="shop-close-toggle.svg"></div>
+			</div>
+			</div>
+			<div class="product tote-v2">
+				<div id="shop-view-toggle"><img src="shop-view-toggle.svg"></div>
+
+			<div id="product-overlay">
+
+				<h1>Flora Illustrata Silk Scarf</h1>
+
+				<div class="price">$46.00</div>
+
+				<div class="view-product">
+					<img src="view-product.svg">
+					<p>View This Product</p>
+				</div>
+				<div id="shop-close-toggle"><img src="shop-close-toggle.svg"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</section>
+	</body>
+	</html>

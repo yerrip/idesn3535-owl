@@ -1,7 +1,11 @@
 @font-face {font-family: Circular Air;  src: url(fonts/Circular Air-Light);  font-weight: 300;}
 @font-face {font-family: Circular Air;  src: url(fonts/Circular Air-Book);  font-weight: 500;}
 @font-face {font-family: Circular Air;  src: url(fonts/Circular Air-Bold);  font-weight: 700;}
-@font-face {font-family: Founders Grotesk;  src: url(fonts/FoundersGrotesk-Bold);  font-weight: 700;}
+@font-face {font-family: Founders Grotesk;  src: url(fonts/FoundersGrotesk-Bold.otf);  font-weight: 700;}
+@font-face {font-family: Founders Grotesk;  src: url(fonts/FoundersGrotesk-Semibold.otf);  font-weight: 600;}
+@font-face {font-family: Founders Grotesk;  src: url(fonts/FoundersGrotesk-Regular.otf);  font-weight: 500;}
+@font-face {font-family: IBM Plex Serif;  src: url(fonts/IBMPlexSerif-Light.otf);  font-weight: 100;}
+
 
 /*$green: #3BC8AA;
 $orange: #FF551A;
@@ -34,8 +38,7 @@ section {
 a {
 	font-family: Founders Grotesk, sans-serif;
 	text-decoration: none;
-	border-bottom: 1px solid;
-	font-weight: 500;
+	font-weight: 600;
 }
 
 h1 a {
@@ -53,8 +56,8 @@ h2 {
 }
 
 .top-bar {
-	background-color: #555659;
-	color: #fff;
+	background-color: #DEE0DC;
+	color: #555659;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -62,14 +65,33 @@ h2 {
 } 
 
 .top-bar p {
-	margin-left: 15px;
+	margin-left: 100px;
 	font-size: 14px;
 }
 
 .search {
 	background: #DEE0DC;
-	width: 20%;
+	width: 35%;
+	display: flex;
+	margin: 0;
+}
+
+.search input {
+	margin: 0;
 	height: 50px;
+	padding: 0;
+	border: 0;
+	width: 100%;
+	background-color: #555659;
+	color: #fff;
+	padding: 15px;
+	font-size: 16px;
+	font-family: Circular Air, sans-serif;
+	font-weight: 300;
+}
+
+input::placeholder {
+  color: #bbb;
 }
 
 .search img {
@@ -79,9 +101,18 @@ h2 {
 header {
 	width: 100%;
 	padding: 15px;
+	padding-left: 100px;
+	padding-right: 100px;
 	display: flex;
 	justify-content: space-between;
 
+}
+
+header h1 {
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+	font-size: 0;
 }
 
 header nav {
@@ -97,10 +128,26 @@ header nav a {
 	margin-right: 25px;
 	color: #2E2D77;
 	text-decoration: none;
-	padding-bottom: 5px;
+	padding-bottom: 0px;
 	font-family: Founders Grotesk, sans-serif;
-	font-weight: 500;
+	font-weight: 600;
 
+}
+
+nav.about a.about-nav{
+	border-bottom: 2px solid #734A9D;;
+}
+
+nav.visit a.visit-nav{
+	border-bottom: 2px solid #000;
+}
+
+nav.events a.events-nav{
+	border-bottom: 2px solid #fff;
+}
+
+nav.shop a.shop-nav{
+	border-bottom: 2px solid #2E2D77;
 }
 
 main {
@@ -132,17 +179,6 @@ button {
 	margin: 0;
 }
 
-/* -------------------------HERO SECTION------------------------------ */
-
-
-.hero {
-	width: 100%;
-	background: #ccc;
-	margin-bottom: 120px;
-	position: relative;
-	height: 500px;
-}
-
 .drop {
 	background-image: url(drop-red.svg);
 	background-size: contain;
@@ -155,9 +191,34 @@ button {
 	top: 250px;
 }
 
+/* -------------------------HERO SECTION------------------------------ */
+
+
+.hero {
+	width: 100%;
+	background: #ccc;
+	margin-bottom: 120px;
+	position: relative;
+	height: 500px;
+	background-image: url(chihuly-night.jpg);
+	background-size: cover;
+	background-repeat: repeat-x;
+}
+
+.drop {
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 500px;
+	position: absolute;
+	padding-left: 130px;
+	padding-top: 75px;
+	color: #fff;
+	top: 250px;
+}
+
 .slider-toggle {
 	background-color: #734A9D;
-	width: 50%;
+	width: 60%;
 	height: 250px;
 	bottom: -75px;
 	position: absolute;
@@ -219,13 +280,14 @@ button {
 	font-family: Founders Grotesk, sans-serif;
 	font-size: 48px;
 	color: #fff;
-	font-weight: 500;
+	font-weight: 600;
+	margin-bottom: 10px;
 }
 
 /* -------------------------ABOUT SECTION------------------------------ */
 
 section.about {
-	margin-top: 300px;
+	margin-top: 550px;
 	margin-bottom: 50px;
 	background-image: url(about-bg.jpg);
 	background-repeat: no-repeat;
@@ -256,10 +318,35 @@ section.about {
 	transform: translateX(50%);
 }
 
+
+/* -------------------------ABOUT LIGHTBOX------------------------------ */
+
+#about-overlay {
+	background-color: #F2EEDC;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	padding: 100px;
+	display: none;
+}
+
+#close-toggle {
+position: fixed;
+right: 100px;
+top: 100px;
+}
+
+#about-overlay.display {
+display: block;
+}
+
 /* -------------------------VISIT SECTION ------------------------------ */
 
 section.visit {
-		margin-top:50px;
+		margin-top:250px;
 		padding-left: 150px;
 	}
 
@@ -267,26 +354,80 @@ section.visit {
 	margin-bottom: 40px;
 }
 
+.visit .description {
+		background-color: #76C8AD;
+		padding: 50px;
+		position: relative;
+	}
 
-	.visit .line {
+
+	.visit {
+		background-repeat: no-repeat;
+	}
+
+	.visit-1 .description {
+		max-width: 35vw;
+	}
+
+	.visit-1 {
+		background-image: url(visit-1.jpg);
+		background-size: 300px;
+		background-position: 50% 0%;
+	}
+
+	.visit-2 .description {
+		max-width: 50vw;
+		margin-left: 30vw;
+	}
+
+	.visit-2 {
+		background-image: url(visit-2.jpg);
+		background-size: 300px;
+		background-position: 40% 100%;
+		padding-bottom: 50px;
+
+	}
+
+	.visit-3 .description {
+		max-width: 40vw;
+	}
+
+	.visit-3 {
+		background-image: url(visit-3.jpg);
+		background-size: 300px;
+		background-position: 0% 100%;
+		padding-bottom: 50px;
+	}
+
+	.visit-4 .description {
+		max-width: 30vw;
+		margin-left: 30vw;
+	}
+
+	.visit-4 {
+		position: relative;
+	}
+
+	.visit-4 img {
+		position: absolute;
+		right: 24vw;
+		top: -250px;
+		width: 200px;
+	}
+
+
+	.line {
 		width: 100%;
 		height: 1px;
 		background-color: #000;
 		margin-bottom: 25px;
 	}
 
-	.visit .subtitle {
+	.subtitle {
 	font-family: Founders Grotesk, sans-serif;
 	font-size:24px;
 	color: #000;
 	font-weight: 900;
-	}
-
-	.visit .description {
-		background-color: #ABCE9D;
-		width: 500px;
-		padding: 50px;
-		position: relative;
 	}
 
 	.event-title h2 {
@@ -296,7 +437,7 @@ section.visit {
 	}
 
 	.event-title h3 {
-		margin-right: 20vw;
+		margin-right: 16vw;
 	}
 
 	.visit button {
@@ -306,131 +447,269 @@ section.visit {
 }
 
 
-/* -------------------------PRODUCT REVIEWS SECTION ------------------------------ */
 
-section.product-reviews {
-	background-color: #F2EEDC;
-	width: 100%;
-	height: 500px;
-	margin-top: 100px;
+/* EVENTS ------------------------------ */
+
+.events-section {
+	padding: 100px;
+	margin-top: 250px;
+}
+
+.events-section .section-header {
+	margin-bottom: 50px;
+}
+
+.events-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.event-single {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: #734A9D;
+	width: 500px;
+	height: 450px;
+	padding: 50px;
+	color: #fff;
+}
+
+.event-single h1 {
+	font-family: Founders Grotesk, sans-serif;
+	font-size:32px;
+	margin-bottom: 0;
+	margin-top: 0;
+	font-weight: 600;
+	line-height: 1;
+}
+
+.event-single.herbarium {
+	background-image: url(herbarium-event.jpg);
+	background-position: bottom center;
+}
+
+.inactive {
+	transform: scale(.75);
+	opacity: .3;
+}
+
+
+
+
+
+
+/* PRODUCT REVIEWS ------------------------------ */
+
+
+.product-reviews {
+	margin-top: 250px;
 	position: relative;
+	background-color: #F2EEDC;
+	height: 525px;
+	padding: 100px;
+	padding-top: 70px;
 }
 
 .product-reviews .drop {
 	background-image: url(review-drop.svg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	position: absolute;
-	height: 500px;
-	top: 0;
 	right: 0;
-	color: #fff;
+	top: 0;
+	background-position: 100% 100%;
+	background-size: contain;
+	color: #000;
+	width: 60vw;
+	height: 60vh;
 }
 
-
-
-
-
-/* -------------------------REVIEW STYLES ------------------------------ */
-
-
-.review-list {
-	padding-left: 75px;
-	padding-bottom: 25px;
-}
-
-.review {
-	background: $green;
-	padding: 25px;
-	margin-bottom: 20px;
-	width: 40%;
-	line-height: 1.25;
-	height: 200px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.review a {
-	color: $black;
+.product-reviews h2 {
+	font-weight: 300;
 	font-size: 36px;
 }
 
-.score-bubble {
-	margin-top: 15px;
-	background-image: url("drop-red.svg");
-	background-size: contain;
-	height: 35px;
-	width: 35px;
-	background-position: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.score-bubble a {
-	border-bottom: 0px;
-	padding-top: 2px;
+.product-reviews .drop p {
+	font-weight: 300;
 	font-size: 18px;
-	font-family: $bodyFont;
-	font-weight: 500px;
+	width: 60%;
+	margin-bottom: 50px;
 }
 
-/* FORM STYLES ------------------------------ */
-
-
-label {
-  display: block;
+.product-reviews .avatar {
+	margin-top: 50px;
 }
 
-input, textarea {
-  font-size: 18px;
-  min-width: 400px;
-  border: 1px solid #cccccc;
-  padding: 7px 10px;
-  font-family: inherit;
+.product-reviews .user {
+	font-family: Founders Grotesk, sans-serif;
+	font-size: 24px;
+	font-weight: 600;
 }
 
-input[type=submit] {
-  background: $purple;
-  color: white;
-  border-color: $purple;
+.product-reviews .location {
+	font-family: Founders Grotesk, sans-serif;
+	font-size: 18px;
 }
 
-textarea {
-  min-height: 400px;
+.product-reviews button {
+	bottom: 0;
+	left: 42%;
+	transform: translateX(50%) translateY(50%);
 }
 
 
-nav.filters {
-  margin: 0 0 20px 0;
-  padding: 0 0 10px 0;
-  font-size: 14px;
-  border-bottom: 2px solid $darkerGray;
-  
-  display: flex;
-  align-items: center;
-  
-  a {
-    margin: 0 5px 0 0;
-    text-decoration: none;
-    color: $black;
-  }
-  
-  div, form {
-    margin: 0 0 0 25px;
-  }
-  
-  input {
-    min-width: 200px;
-    font-size: 14px;
-    padding: 4px 5px;
-  }
+/* LOCATION & HOURS ------------------------------ */
+
+.location-section {
+	padding: 100px;
+	margin-top: 250px;
+	width: 100%;
+	position: relative;
+	height: 1000px;
 }
 
+.location-section .section-header {
+	margin-bottom: 35px;
+}
+
+.location-section .hours {
+	background-color: #734A9D;
+	width: 70%;
+	padding: 50px;
+	color: #fff;
+}
+
+.location-section .map img {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 50vw;
+}
+
+/* FOOTER ------------------------------ */
 
 footer {
-	margin-top: 50px;
-	background: $darkerGray;
+	background: #322B1D;
 	height: 400px;
+	width: 100%;
 }
+
+/* BREAKPOINT 1150px ------------------------------ */
+
+@media (max-width: 1150px) {
+
+.slider-toggle {
+	width: 85%;
+}
+
+.visit-1 .description {
+		max-width: 45vw;
+	}
+
+	 	.visit-2 .description {
+		max-width: 50vw;
+		margin-left: 20vw;
+	}
+
+		.visit-4 .description {
+		max-width: 40vw;
+		margin-left: 20vw;
+	}
+
+	.visit-4 img {
+		right: 15vw;
+		top: -250px;
+		width: 200px;
+	}
+
+	.events-container div:nth-child(4) {
+		display: none;
+	}
+
+	.product-reviews {
+	padding: 100px;
+	padding-top: 70px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	height: 100%;
+}
+
+.product-reviews .drop {
+	position: relative;
+	width: 90vw;
+	height: 60vh;
+}
+
+.product-reviews .avatar img {
+	width: 20vw;
+}
+
+}
+
+/* BREAKPOINT 900px ------------------------------ */
+
+
+@media (max-width: 900px) {
+
+	.about .description {
+    width: 70%;
+    margin-left: 100px;
+}
+
+section.about {
+	margin-top: 550px;
+	margin-bottom: 50px;
+	background-position: 0 0;
+}
+
+.about .section-header {
+	margin-left: 50vw;
+
+}
+
+.visit-1 {
+	background-position: 80% 0%;
+}
+
+.visit-1 .description {
+    max-width: 60vw;
+}
+
+.visit-2 {
+		background-position: 0% 100%;
+		padding-bottom: 50px;
+
+	}
+
+.visit-2 .description {
+    max-width: 60vw;
+    margin-left: 0;
+}
+
+	.visit-3 .description {
+		max-width: 60vw;
+	}
+
+			.visit-4 .description {
+		max-width: 60vw;
+		margin-left: 0;
+	}
+
+	.visit-4 img {
+		right: 15vw;
+		top: -200px;
+		width: 150px;
+	}
+
+	.location-section .hours {
+    width: 60%;
+    padding: 50px;
+}
+
+	.location-section .map img {
+    width: 60vw;
+}
+
+}
+
+/* BREAKPOINT 650px ------------------------------ */
+
+

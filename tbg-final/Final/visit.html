@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>The Bronx Garden</title>
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous">
+	</script>
+
+	<script src="utils.js"></script>
+	<script src="lightbox.js"></script>
+	<link href="normalize.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+	<link href="about.css" rel="stylesheet">
+	<script src="nav.html.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			$('body').prepend( getTemplate(headerTemplateVisit, {class: "visit" ,title: 'Visit'}) );
+		});
+	</script>
+</head>
+
+
+<body class="visit-page">
+	<div class="main-content">
+		<div class="event-feature">
+			<div class="line"></div>
+			<div class="subtitle">Learn</div>
+
+			<div class="event-title">
+				<h2>
+					What Plants Can Teach Us:
+					A Talk with Robin Wall Kimmerer
+				</h2>
+
+				<h3>
+					Friday, December 1
+					10–11:30 am
+					at Ross Hall
+				</h3>
+			</div>
+
+			<button>Plan your visit</button>
+		</div>
+		<div class="main-text">
+			
+			<div class="content-box">
+			<div class="section-header">Summary</div>
+			<div class="content-box two-col">
+			<p class="thin" >
+				As a botanist and member of the Citizen Potawatomi Nation, Robin Wall Kimmerer blends science’s polished art of seeing with indigenous wisdom.
+				<br>
+				<br>
+				An expert bryologist and inspiration for Elizabeth Gilbert’s Signature of All Things, she believes mosses to be ancient storytellers from whom we can learn much about cooperation and sharing limited resources. The coral reefs of the forest and exemplars of living within one’s means, mosses build soil, purify water, and function as engines of biodiversity, even though most are less than a centimeter tall!
+			</p>
+
+			<p class="thin">
+				In this wide-ranging talk, Kimmerer shares insights from her current research and her book Braiding Sweetgrass, as well as her fervent belief that if we claim our own agency in tending to Earth, we can restore the relationship between plants and people.
+			</p>
+			</div>
+
+			<div class="controls">
+					<div id="left-arrow"><img src="left-arrow.svg"></div>
+					<div id="right-arrow"><img src="right-arrow.svg"></div>
+					<div class="sequence">1 of 7</div>
+				</div>
+	</div>
+
+	<section class="info-bar">
+		<div class="heading">
+			<h1>Visit Today!</h1>
+			<h2>There’s something for everyone</h2>
+		</div>
+
+
+		<div class="divider"><img src="visit-main.jpg">
+</div>
+		<div class="more-info">
+			Robin Wall Kimmerer<span> is an award-winning author, Distinguished Teaching Professor at the </span>SUNY College of Environmental Science and Forestry, <span>and founding Director of the </span>Center for Native Peoples and the Environment.
+		</div>
+		
+	</section>
+</body>
+
+</html>

@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>The Bronx Garden</title>
 	<script
 	src="https://code.jquery.com/jquery-3.2.1.min.js"
 	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -9,14 +12,15 @@
 	</script>
 
 	<script src="utils.js"></script>
+	<script src="lightbox.js"></script>
 	<link href="normalize.css" rel="stylesheet">
 	<link href="styles.css" rel="stylesheet">
 	<script src="nav.html.js"></script>
 
 	<script>
 		$(document).ready(function() {
-			$('body').prepend( getTemplate(headerTemplate, {class: "home" ,title: 'Home'}) );
-			$('body').append( getTemplate(footerTemplate, {class: "home" ,title: 'Home'}) );
+			$('body').prepend( getTemplate(headerTemplate, {title: 'Home'}) );
+			$('body').append( getTemplate(footerTemplate, {title: 'Home'}) );
 		});
 	</script>
 </head>
@@ -58,11 +62,16 @@
 
 			<p>Founded in 1891 and now a National Historic Landmark, it is one of the greatest botanical gardens in the world and the largest in any city in the United States, distinguished by the beauty of its diverse landscape and extensive collections and gardens, as well as by the scope and excellence of its multidisciplinary exhibitions and programs.</p>
 
-			<button>Learn More</button>
+			<button id="about-toggle">Learn More</button>
 		</div>
 	</section>
 
-	<section class="visit">
+
+	<div id="about-overlay">
+		<div id="close-toggle"><img src="close.svg"></div>
+	</div>
+
+	<section class="visit visit-1">
 		<div class="section-header">
 			Visit
 		</div>
@@ -89,16 +98,108 @@
 		</div>
 	</section>
 
+	<section class="visit visit-2">
+		<div class="description">
+
+			<div class="line"></div>
+			<div class="subtitle">What’s Beautiful Now?</div>
+
+			<div class="event-title">
+				<h2>
+					Marjorie G. Rosen<br>Seasonal Walk
+				</h2>
+
+				<h3>
+					Year-round
+				</h3>
+			</div>
+
+			<button>Plan your visit</button>
+		</div>
+	</section>
+
+	<section class="visit visit-3">
+		<div class="description">
+
+			<div class="line"></div>
+			<div class="subtitle">For Families</div>
+
+			<div class="event-title">
+				<h2>
+					Drop-In <br>Nature Exploration
+				</h2>
+
+				<h3>
+					Year-round
+				</h3>
+			</div>
+
+			<button>Plan your visit</button>
+		</div>
+	</section>
+
+	<section class="visit visit-4">
+		<div class="description">
+
+			<div class="line"></div>
+			<div class="subtitle">Research</div>
+
+			<div class="event-title">
+				<h2>
+					Do some research at the Mertz Library
+				</h2>
+
+				<h3>
+					Year-round
+				</h3>
+			</div>
+
+			<button>Plan your visit</button>
+
+		</div>
+		<img src="visit-4.jpg">
+	</section>
+
+	<section class="events-section">
+
+		<div class="section-header">
+			Events
+		</div>
+
+		<div class="events-container">
+			<div class="event-single herbarium inactive">
+				<h1>What in the world is a herbarium?</h1>
+				<p>10AM - 6PM</p>
+			</div>
+
+			<div class="event-single herbarium">
+				<h1>What in the world is a herbarium?</h1>
+				<p>10AM - 6PM</p>
+			</div>
+
+			<div class="event-single herbarium inactive">
+				<h1>What in the world is a herbarium?</h1>
+				<p>10AM - 6PM</p>
+			</div>
+
+			<div class="event-single herbarium inactive">
+				<h1>What in the world is a herbarium?</h1>
+				<p>10AM - 6PM</p>
+			</div>
+		</div>
+		
+	</section>
+
 	<section class="product-reviews">
 
 		<div class="section-header">
 			Product Reviews
 		</div>
 
-		<div class="avatar"><img src="carol.svg"></div>
+		<div class="avatar"><img src="carol.png"></div>
 
 		<div class="drop">
-				<h2>Gorgeous exhibit, magical experience</h2>
+				<h2>Gorgeous exhibit, <br>magical experience</h2>
 
 				<p>
 					We loved seeing this exhibit at night - the sculptures were luminous lit up against the dark sky. It was an absolutely lovely experience.
@@ -107,10 +208,37 @@
 				<div class="user">Carol A.</div>
 				<div class="location">Alexandria, Virginia</div>
 			</div>
-		<button>Plan your visit</button>
+		<a href="shop.html"><button>Visit our shop</button></a>
 
 	</section>
 
+<section class="location-section">
+	<div class="section-header">
+			Location &amp; Hours
+		</div>
+
+	<div class="hours">
+
+		<p>2900 Southern Blvd.  <br>Bronx, New York 10458</p>
+
+		<div class="hours-container">
+			<div class="col">
+				<p>Today's Hours</p>
+				<p>10 a.m.- 6 p.m.</p>
+			</div>
+
+			<div class="col">
+				<p>Tuesday - Sunday</p>
+				<p>10 a.m.- 6 p.m.</p>
+			</div>
+
+			<p>TBG is closed on Mondays with the exception of special dates.</p>
+	</div>
+
+	<div class="map">
+		<img src="location.png">
+	</div>
+</section>
 
 
 

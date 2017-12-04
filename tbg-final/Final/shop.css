@@ -1,0 +1,181 @@
+/* -------------------------FILTERS------------------------------ */
+
+.filters {
+	padding: 100px;
+}
+
+.filters ul {
+	font-family: Founders Grotesk, sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	display: flex;
+	width: 80%;
+	justify-content: space-between;
+}
+
+.filters .divider {
+	width: 80%;
+	height: 1px;
+	background-color: #000;
+	margin-bottom: 20px;
+	margin-top: 75px;
+}
+
+/* -------------------------SHOP GRID------------------------------ */
+
+
+.shop-grid {
+	width: 100%;
+	padding: 100px;
+}
+
+.row {
+	display: flex;
+	width: 90%;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.row-always {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.row-reverse {
+	display: flex;
+	flex-direction: row-reverse;
+	width: 90%;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.shop-grid .featured-box {
+	width: 45%;
+	height: 650px;
+	background-color: #eee;
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.scarf {
+	background-image: url(scarf.jpg);
+}
+
+.tote-v1 {
+	background-image: url(tote-v1.jpg);
+}
+
+.tote-v2 {
+	background-image: url(tote-v2.jpg);
+}
+
+#shop-view-toggle, #shop-close-toggle {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 75px;
+}
+
+#product-overlay {
+	background-color: rgba(115, 74, 157, .9);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 60%;
+	width: 100%;
+	display: none;
+	color: #fff;
+	padding: 50px;
+}
+
+#product-overlay h1 {
+	font-family: Founders Grotesk, sans-serif;
+	font-weight: 600;
+	font-size: 36px;
+}
+
+#product-overlay .price {
+	font-family: Founders Grotesk, sans-serif;
+	font-weight: 100;
+	font-size: 48px;
+}
+
+#product-overlay .view-product {
+	display: flex;
+}
+
+#product-overlay .view-product p {
+	margin-left: 50px;
+	font-family: Founders Grotesk, sans-serif;
+	font-weight: 900;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	}
+
+
+
+#product-overlay.show {
+display: block;
+}
+
+.shop-grid .two-product {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	margin-left: 10%;
+	justify-content: space-between;
+}
+
+.shop-grid .product {
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #eee;
+	width: 33.3%;
+	height: 300px;
+	margin-right: 25px;
+}
+
+.shop-grid .two-product .product {
+	height: 300px;
+	width: 100%;
+}
+
+/* BREAKPOINT 1150px ------------------------------ */
+
+@media (max-width: 1150px) {
+	.row {
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	}
+
+	.row-reverse {
+		flex-direction: column-reverse;
+		width: 100%;
+		align-items: center;
+	}
+
+.shop-grid .two-product {
+    flex-direction: row;
+    width: 100%;
+}
+
+.shop-grid .featured-box {
+    width: 80%;
+    margin-bottom: 50px;
+    margin-top: 50px; 
+    }
+
+    .filters {
+    	margin-left: 100px;
+    }
+
+
+	}
+
+
