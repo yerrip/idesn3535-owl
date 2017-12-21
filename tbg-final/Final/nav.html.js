@@ -20,6 +20,21 @@ const headerTemplate = `
       </div>
     </div>
 
+    <div id="menu-toggle">
+    <img src="menu-green.svg"/>
+    </div>
+
+    <div class="menu">
+
+    <nav class="{{class}}">
+          <a class="about-nav" href="about.html">About</a>
+          <a class="visit-nav" href="visit.html">Visit</a>
+          <a class="events-nav" href="events.html">Events</a>
+          <a class="shop-nav" href="shop.html">Shop</a>
+        </nav>
+
+        </div>
+
 
 `;
 
